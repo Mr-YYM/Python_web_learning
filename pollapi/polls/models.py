@@ -27,4 +27,4 @@ class Vote(models.Model):
     vote_by = models.ForeignKey(User, on_delete=models.CASCADE)
 
     class Meta:
-        unique_together = ("poll", "vote_by")
+        unique_together = ("poll", "vote_by") # 注意这里，你一直想要解决的。
