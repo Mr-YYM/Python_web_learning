@@ -9,7 +9,3 @@ from . import serializers
 class UserListView(generics.ListCreateAPIView):
     queryset = models.CustomUser.objects.all()
     serializer_class = serializers.UserSerializer
-
-
-def foo(request):
-    1+'1'
